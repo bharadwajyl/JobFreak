@@ -1,0 +1,65 @@
+/*TAB TRANSITION*/
+.tab_transition{
+    min-width: fit-content;
+    width: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    height:100vh;
+    background-color:var(--dark);
+    color:var(--lite);
+    text-align:left;
+}
+
+.tab_transition a{
+    padding:1rem;
+    color:var(--lite);
+    white-space:nowrap;
+    display:block;
+    text-align:left;
+    width:100%;
+    position:relative;
+}
+
+.tab_transition a .fa{
+    margin-right:5px;
+}
+
+.tab_transition .active{
+    background-color:var(--primary) !important;
+    color:var(--white);
+    font-weight:600;
+}
+
+.tab_transition .active:after{
+    content:"\f0d9";
+    font-family:"FontAwesome";
+    position:absolute;
+    right:-2px;
+    font-size:2rem;
+    top:50%;
+    color:var(--white);
+    transform:translate(0, -50%);
+}
+
+.tab_transition a:hover{
+    color:var(--white);
+}
+
+
+/*CONTENT*/
+.content{
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+
+.tabs{
+    display:none;
+}
+
+.tabs .sub_title{
+    color:var(--gray);
+}
+
+.tab_1{
+    display:block;
+}
